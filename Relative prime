@@ -1,0 +1,27 @@
+/* Checking for relative prime */
+
+#include<stdio.h>
+int main()
+{
+        int a1,a2,i,temp=0;
+        printf("\nEnter First No  :- ");
+        scanf("%d",&a1);
+        printf("\nEnter Second No :- ");
+        scanf("%d",&a2);
+        for(i=1;i<=a1;i++)
+          {
+                   if(a1%i==0 && a2%i==0)
+                     {
+                               temp=i;
+                   }
+      }
+    if(temp==1)
+      {
+               printf("\nBoth the numbers are relatively prime !!");
+          }
+        else
+          {
+                    printf("\nBoth the numbers are not relatively prime !! ");
+          }
+        return 0;
+}
